@@ -4,7 +4,7 @@ Official project website for the Soul Studio iPhone beta.
 
 - Website: https://soul-studio-official.pages.dev/
 - Distribution: verified IPA releases on MediaFire.
-- Primary hosting: Cloudflare Pages Free, static direct upload. This GitHub Pages address is retained as a compatibility redirect to the clean official URL.
+- Hosting: Cloudflare Pages, free static direct upload. GitHub retains a compatibility address and website-only source.
 
 This repository contains website files only. The iOS application's source, user files, signing credentials and IPA binaries are not included.
 

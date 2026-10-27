@@ -1,34 +1,27 @@
-# Soul Studio 5.10.1 — iPhone update
+# Soul Studio 5.10.1 — second beta revision
 
-Built from the verified 5.10.0 iOS source. Minimum iOS 26.0. The IPA is unsigned; a valid signing method is required before installing. The app shows version 5.10.1 without a visible build-number label. Android is outside this update.
+27 October 2026 · iOS 26.0 or later · unsigned IPA
 
 ## Changes
 
-- **Files imports:** dedicated document pickers replace conflicting nested import callbacks in music, audio and custom effects. Selections are copied/coordinated before processing, cancellation is handled, and rejected formats show an explanation. Supported XML shader/effect-library formats can be imported; arbitrary foreign app projects and desktop AEX binaries cannot be converted faithfully.
-- **Audio:** preserve the shared audio session when stopping an audition, connect 44.1/48 kHz sources at their native rate, and keep real-time PCM callbacks outside the Swift main actor. Fixes a reproduced audio-thread crash. Music queue rename/reorder and Sound folder navigation/sorting are available. Complete local songs play inside the app. Spotify's official embed remains a preview; Spotify Free does not authorize full native playback.
-- **Intro:** a new original, quiet intro sound follows the existing sound preference and Silent switch.
-- **Downloads:** accept valid bounded 200/206 range responses, retry short transfers safely, reject invalid/truncated files, and re-resolve an expired URL once. Correct fragmented MP4 initialization durations on app-owned copies before reading/importing. A public YouTube test previously appeared twice its actual length with half the frame rate and a frozen tail; it now imports at its real duration/rate. Downloader is in Elements. Existing ten-minute and optional local enhancement controls remain. Providers can still block/remove/restrict links; no promise that every link will work.
-- **Text/editor:** tighter high-resolution glyph rendering fixes the small raster text preview; plain captions now use the same real text layers for preview and export instead of a duplicated karaoke overlay. Appearance and animation presets are independent. Selected timeline rows expose undoable visibility and lock controls; locked rows cannot be resized. Inspector touch targets and seek completion are improved.
-- **Compact panels:** My Music uses a queue-first layout and a fixed, compact transport. Image & Video uses prompt-first controls, a compact engine switch and a fixed Generate action; setup details stay in disclosures. Media and Shapes use two rows.
-- **Auto Body:** start with automatic recognition or Place points. Correct rotated manual guides, maintain exact pivots, and reject stale/cancelled results. Masks and outlines remain editable; stylized characters/weapons are not guaranteed to be detected perfectly.
-- **Image/video AI:** retain optional downloadable phone image generation without an account/API key/Apple Intelligence. Add an optional private, certificate-pinned connection to the user's own computer running ComfyUI for image/video workflows. The included setup kit contains code, instructions and starter graphs, not model weights. Computer generation requires separately installed compatible models and a tested workflow. The optional owner-key Cloudflare mode remains explicitly capped and opt-in; no paid fallback or billing is enabled.
-- **Notifications:** contextual permission request, export/update alerts and deduplicated incoming-message alerts while listeners are active. Cached/history/own/pending messages do not alert; mute preferences are account-specific and lockscreen text is generic. Reliable suspended/terminated-app push is not configured: it requires APNs credentials/entitlements and a server.
-- **Languages:** bundled dictionaries load once and switch immediately. Script/region lookup and dynamic effect/parameter labels are improved; translated native controls use the same bundled catalog. There are 25 dictionaries with varying coverage, not complete translations for all 136 language choices. Missing strings fall back to English. See Validation/LOCALIZATION_5_10_1.md.
-- **3D samples (last priority):** add two free Quaternius Standard humanoids with real skinned meshes and 65 poseable joints each. Original buffers/textures, license and provenance stay bundled. These are stylized base characters, not photorealistic humans; imported animation clips are not played.
-- **Website:** About links to the existing public Soul Studio site, independent of the suspended GitHub account: https://soul-studio-ios.indigotide128.chatgpt.site/. Release download publication is verified separately after building/uploading the IPA.
+- A fixed-height add panel with Media, Audio, Shape, Text and Elements. Switching tabs preserves the panel position and preview size.
+- Two compact Media rows and a plain, paged Shapes grid with 30 vector presets.
+- Timeline visibility and lock controls pinned to the left.
+- A larger Draw canvas, layer visibility and locking, opacity, seven blend modes and clipping to the layer below.
+- A clearer My Music player and searchable local queue. Late playback-state updates respect pauses and interruptions.
+- A beta Alight XML layout importer with a compatibility review and original-media selection.
+- Removed the sample-model browser while retaining compatibility with saved projects.
 
-## Verification
+## Installation and limits
 
-Actual native checks cover audio import/play/seek/output and recording callbacks (21), editor typography/models/presets (56), downloader/XML/coordinated reads (42), fragmented timing (23), notification policy (24), and the production TLS computer-generation client including wrong-pin rejection (9). Four Node tests cover the private gateway. Integration suites passed 3,819 effect endpoint checks, 199 editing checks, 42 update/custom-effect checks, 55 identity/sample checks and 15 music checks. Auto Body and assembly regression scripts passed. Native mounted screenshots are supplied separately.
+The IPA must be signed with a compatible installation tool. Native simulator and package checks passed; physical-device acceptance and large-project performance testing remain outstanding.
 
-Live downloader checks decoded the last video frame and verified actual audio tracks for a public TikTok clip and YouTube video-with-audio, video-only and audio-only downloads. The corrected YouTube video measured 18.933 seconds at 15 fps instead of 37.866 seconds at 7.5 fps. Tests of the computer gateway used synthetic media for transport; they do not prove trained video-model inference or iPhone generation speed.
+Alight import preserves editable layout and basic transforms. Original media is required; proprietary effects are not translated and QR package resolution is not integrated.
 
-Physical iPhone Files/iCloud-provider behavior, Bluetooth/audio routes, dense-project interaction, ten-minute enhancement, speech recognition quality and thermal/RAM behavior still need device acceptance. Existing projects with previously recorded wrong timing are not automatically rescaled; reimport the affected source. This release does not claim zero bugs, all languages/words, arbitrary XML compatibility or unlimited hardware performance.
+Final Draw blending and clipping appear after a live stroke ends. Layer-property edits do not have a separate undo history.
 
-## Free software and sources
+Optional phone image generation requires a model download and supported hardware. Video generation still requires a configured computer connection. Full Spotify Free streaming is unavailable through the supported integration; complete local songs play inside My Music.
 
-No purchase, subscription or billing was enabled. Existing packages and new setup code remain local/free. Parallel agents helped implement modules; their quota later stopped, and integration continued in the main task without bypassing it.
+This is an actively developed beta. AI recognition, external download providers and device performance have practical limits.
 
-- [Apple AVAudioEngine](https://developer.apple.com/documentation/avfaudio/avaudioengine), [UIDocumentPickerViewController](https://developer.apple.com/documentation/uikit/uidocumentpickerviewcontroller), [UserNotifications](https://developer.apple.com/documentation/usernotifications).
-- [Spotify iOS SDK requirements](https://developer.spotify.com/documentation/ios/).
-- [ComfyUI server routes](https://docs.comfy.org/development/comfyui-server/comms_routes), [SDXL model](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0), [FLUX.1 Schnell](https://huggingface.co/black-forest-labs/FLUX.1-schnell), [Wan 2.1 1.3B](https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B). Read model licenses and hardware requirements before downloading. Phone SD2.1 requirements remain at least 6 GB RAM and about 4 GB free during installation.
+Official website: https://soul-studio-official.pages.dev/

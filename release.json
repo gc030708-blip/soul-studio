@@ -1,9 +1,10 @@
 {
   "version": "5.10.1",
-  "filename": "Soul_Studio_5.10.1_Unsigned.ipa",
-  "bytes": 89858078,
-  "sha256": "f51eaf60fc6bd0a99d870384880cdf2c184c24ba3fe01abed724363e000e4c42",
+  "revision": "second beta revision",
+  "filename": "Soul_Studio_5.10.1_Revision_2_Unsigned.ipa",
+  "bytes": 89949885,
+  "sha256": "2dd2c904fa814d86b97bd19bbe3dfdb59d75b072652ba2628217c04f071f475f",
   "minimumIOS": "26.0",
-  "downloadURL": "https://www.mediafire.com/file/s966x8sulug0tys/Soul_Studio_5.10.1_Unsigned.ipa/file",
-  "updatedAt": "2026-10-26T14:39:01.075657+00:00"
+  "downloadURL": "https://www.mediafire.com/file/3ktihhga1das4s7/Soul_Studio_5.10.1_Revision_2_Unsigned.ipa/file",
+  "updatedAt": "2026-10-27T06:43:03.342526+00:00"
 }
