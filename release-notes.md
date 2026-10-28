@@ -1,36 +1,18 @@
-# Soul Studio 5.10.1 — third beta revision
+# Soul Studio 5.10.1 — fourth beta revision
 
-This update keeps the approved compact five-tab add panel and focuses on editing reliability, optional media replacement, sound and messaging.
+- Clip controls stay in a compact bottom panel, keeping the main preview and timeline visible. Short screens and unusually large saved canvas layouts adapt to retain usable controls.
+- Media, Audio, Shape, Text and Elements share a larger fixed panel height. Media shows two rows and Shapes shows three rows, without resizing the tray when switching tabs.
+- Vertical layer scrolling uses the native scroll view. Seeking, trimming and hold-to-reorder use separate gestures. The visibility and lock controls stay on the left.
+- Workspace navigation, Messages and About use quieter, compact styling. Message senders are announced for VoiceOver, and group Send uses contrast-aware ink.
+- Selective Color respects its hue range; Replace Color targets hue without an unwanted luminance mask. Film grain preserves transparent areas and bypasses at zero amount.
+- Polar Coordinates now performs forward and reverse mapping. Random Displacement keeps its noise map across the frame, Ripple receives its required shading input, and Precise Box Blur produces meaningful small-radius adjustments.
+- Turbulence now combines up to six real noise octaves. Lens Blur uses a circular-aperture bokeh filter; unsupported polygon blade/rotation controls and the unused Depth Blur feather control are removed from the UI while old saved values remain compatible.
+- Three new stylized procedural effects: 3D Canyon, 3D Alpine Valley and 3D Island Coast, with camera and lighting controls. The coastal scene includes animated water. Affected effects have refreshed native animated previews.
+- Alight Motion project QR/XML import has been removed. Soul Studio project files, shared Soul project links/QR and portable Soul XML/HTML effects remain supported.
+- Refreshed native app captures use original Orbit motion-design artwork. The website includes a 25-second native tour and actual rendered environment samples.
 
-## Changes
+Unsigned arm64 IPA for iOS 26+. Sign before installing.
 
-- Shapes use synchronous cached vector silhouettes and eager page rows, so the first page no longer depends on a scroll to appear. The Pie silhouette also has a proper cutout rather than duplicating Circle.
-- Timeline layers scroll vertically with a finger. The Top layers and Bottom layers buttons are removed. Direction-aware trim gestures yield vertical swipes to the layer list, preserve long-press reorder and clean up interrupted gestures.
-- The main clip inspector keeps Transform, Effects and AI controls without a second preview. The editor's main preview and the dedicated Typography editing preview remain. Text entry in the main inspector is compact rather than a second large styled view.
-- The app soundtrack is the bundled Soul Studio Theme with a volume slider and no track selector. It pauses in the editor, during My Music listening, during recording and when the app is inactive. Personal imported listening stays separate from project exports.
-- Intro sound is scheduled independently from visual animation and haptics, once per launch, with the SFX preference and hardware Silent setting respected.
-- Messages use a compact inbox, cleaner thread spacing, grouped sender avatars/timestamps and visible New message / Create group actions. Existing attachments, replies, search, retry and group management remain.
-- Alight scene XML can be opened without original media. Missing slots use explicitly labelled local image cards or silent audio. Choose replacements from Photos or Files, or provide a local ZIP containing the XML and matching media. Editable layer timing and basic transform tracks remain; original media is optional.
-- Portable project validation now accepts the same existing, acyclic layer parents as the editor, including null objects. Alight import uses the package-compatible 500-layer cap. Missing or cyclic parents remain rejected.
-- The official website includes more real native screens, a user-controlled screen-tour video, strict static resource/security headers and validated release metadata. The app's About link now goes directly to the official Cloudflare address.
+Catalogue and parameter checks use bounded synthetic frames. They do not prove every appearance, arbitrary stacks, audio/time path or physical-phone frame rate. Physical-device gestures, keyboard/VoiceOver, live community behavior and large-project performance still require acceptance. No zero-bug guarantee is made.
 
-## Installation and scope
-
-The IPA is an unsigned arm64 iPhone build for iOS 26 or newer. A compatible signing tool is required before installation. This is an actively developed beta; simulator and package checks do not replace physical iPhone acceptance. No zero-bug or universal import/download/AI accuracy claim is made.
-
-Alight compatibility remains a layout beta. Proprietary effects, masks, custom geometry, fonts, nested compositing and exact easing require review and may need rebuilding. A QR holds a hosted package address, not the actual media. Soul Studio can locally review supported official Alight QR links and open the official provider handoff; direct retrieval of proprietary hosted QR package media is not implemented. Local XML/media ZIP packages are supported within documented safety limits. Replacement media is fitted to the existing layer duration, which can change playback speed; adjust timing after import. Replacing a shared video with a still image silences its separate audio-only layers. The creator's unavailable media cannot be recreated by importing XML alone.
-
-The app keeps cloud sharing safeguards. No Firebase rule changes, billing, domain purchases, new model downloads or third-party AI uploads were performed for this revision. Website and IPA publication use the already approved public destinations; application source remains private.
-
-Physical acceptance still includes actual finger gestures on several screen sizes, hardware Silent switch/headphone/interruption behavior, Photos/iCloud providers, authenticated live messaging and large projects. Previous limitations around partial translation coverage, provider-restricted downloader links, Spotify Free streaming and phone video generation remain as documented in earlier release notes.
-
-## Primary references
-
-- [Apple gesture recognizer interoperability](https://developer.apple.com/documentation/SwiftUI/UIGestureRecognizerRepresentable)
-- [Apple simultaneous gestures](https://developer.apple.com/documentation/swiftui/view/simultaneousgesture(_:including:))
-- [Apple ambient audio behavior](https://developer.apple.com/documentation/avfaudio/avaudiosession/category-swift.struct/ambient)
-- [Alight Motion project package export/import](https://support.alightmotion.com/hc/en-us/articles/13724965664785-How-do-I-back-up-my-projects)
-- [Alight Motion iOS package handoff](https://support.alightmotion.com/hc/en-us/articles/16175375909905-I-can-t-import-my-project-package-on-iOS-What-should-I-do)
-- [Cloudflare static asset limits](https://developers.cloudflare.com/pages/platform/limits/)
-
-Verification counts, artifact fingerprints and publication evidence are supplied separately after the final build.
+Optional phone image generation requires a model download and compatible hardware. Video generation currently uses an optional configured computer workflow. Full native Spotify Free playback, unrestricted provider downloads and complete translation coverage are not promised.
