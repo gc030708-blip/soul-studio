@@ -1,18 +1,17 @@
-# Soul Studio 5.10.1 — fourth beta revision
+# Soul Studio 5.10.1 — fifth beta revision
 
-- Clip controls stay in a compact bottom panel, keeping the main preview and timeline visible. Short screens and unusually large saved canvas layouts adapt to retain usable controls.
-- Media, Audio, Shape, Text and Elements share a larger fixed panel height. Media shows two rows and Shapes shows three rows, without resizing the tray when switching tabs.
-- Vertical layer scrolling uses the native scroll view. Seeking, trimming and hold-to-reorder use separate gestures. The visibility and lock controls stay on the left.
-- Workspace navigation, Messages and About use quieter, compact styling. Message senders are announced for VoiceOver, and group Send uses contrast-aware ink.
-- Selective Color respects its hue range; Replace Color targets hue without an unwanted luminance mask. Film grain preserves transparent areas and bypasses at zero amount.
-- Polar Coordinates now performs forward and reverse mapping. Random Displacement keeps its noise map across the frame, Ripple receives its required shading input, and Precise Box Blur produces meaningful small-radius adjustments.
-- Turbulence now combines up to six real noise octaves. Lens Blur uses a circular-aperture bokeh filter; unsupported polygon blade/rotation controls and the unused Depth Blur feather control are removed from the UI while old saved values remain compatible.
-- Three new stylized procedural effects: 3D Canyon, 3D Alpine Valley and 3D Island Coast, with camera and lighting controls. The coastal scene includes animated water. Affected effects have refreshed native animated previews.
-- Alight Motion project QR/XML import has been removed. Soul Studio project files, shared Soul project links/QR and portable Soul XML/HTML effects remain supported.
-- Refreshed native app captures use original Orbit motion-design artwork. The website includes a 25-second native tour and actual rendered environment samples.
+- Clip controls have a larger usable area, a clearer layer header and quieter tool tabs. The panel adapts to short screens while keeping the main preview and a selected timeline row accessible.
+- The preview follows the composition’s proportions when space permits. Fit preserves the whole composition; optional Fill occupies the viewer and may crop its displayed view. This is a viewing choice and does not change project dimensions, layer transforms or exported frames.
+- Home, Community and Messages have separate destinations. Community supports image and video posts with a required title and optional description, plus likes, comments, reporting and creator controls. Community content is visible to verified Soul Studio members; it is not an anonymous public feed.
+- Community images are resized before upload, videos use bounded native export and play only after a tap. Account, daily and global cloud safeguards remain in place. Imports are reviewed before posting; selecting a file does not publish it.
+- The official website has a new visual design, current native screenshots and an original motion-study demonstration. The Community screenshots use fictional demonstration activity, not real posts or private messages.
+
+The fixed Media, Audio, Shape, Text and Elements tray, vertical timeline scrolling, left-side visibility/lock controls and the previous revision’s effect corrections remain included. Soul Studio project files and portable Soul effect files remain supported; Alight Motion project QR/XML import remains removed.
 
 Unsigned arm64 IPA for iOS 26+. Sign before installing.
 
-Catalogue and parameter checks use bounded synthetic frames. They do not prove every appearance, arbitrary stacks, audio/time path or physical-phone frame rate. Physical-device gestures, keyboard/VoiceOver, live community behavior and large-project performance still require acceptance. No zero-bug guarantee is made.
+Native captures and bounded automated checks support this revision, but do not prove every project, effect stack or physical-phone frame rate. Physical-device gestures, real-account community posting/playback, accessibility and sustained large-project performance still require acceptance.
 
 Optional phone image generation requires a model download and compatible hardware. Video generation currently uses an optional configured computer workflow. Full native Spotify Free playback, unrestricted provider downloads and complete translation coverage are not promised.
+
+The new Community rules and feed index are live. The updated trusted cleanup service is tested locally but not deployed; removed new posts can retain reserved storage until owner maintenance is updated.
