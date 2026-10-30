@@ -1,17 +1,22 @@
-# Soul Studio 5.10.1 — fifth beta revision
+# Soul Studio 5.10.2
 
-- Clip controls have a larger usable area, a clearer layer header and quieter tool tabs. The panel adapts to short screens while keeping the main preview and a selected timeline row accessible.
-- The preview follows the composition’s proportions when space permits. Fit preserves the whole composition; optional Fill occupies the viewer and may crop its displayed view. This is a viewing choice and does not change project dimensions, layer transforms or exported frames.
-- Home, Community and Messages have separate destinations. Community supports image and video posts with a required title and optional description, plus likes, comments, reporting and creator controls. Community content is visible to verified Soul Studio members; it is not an anonymous public feed.
-- Community images are resized before upload, videos use bounded native export and play only after a tap. Account, daily and global cloud safeguards remain in place. Imports are reviewed before posting; selecting a file does not publish it.
-- The official website has a new visual design, current native screenshots and an original motion-study demonstration. The Community screenshots use fictional demonstration activity, not real posts or private messages.
+30 October 2026 · iPhone beta
 
-The fixed Media, Audio, Shape, Text and Elements tray, vertical timeline scrolling, left-side visibility/lock controls and the previous revision’s effect corrections remain included. Soul Studio project files and portable Soul effect files remain supported; Alight Motion project QR/XML import remains removed.
+This update focuses on usable clip controls, a quieter Color workspace and clearer conversations.
 
-Unsigned arm64 IPA for iOS 26+. Sign before installing.
+- **More room for adjustments.** Transform, Effects, AI, Sound and Speed have a larger panel, with an explicit Expand/Compact control. Tool tabs remain pinned while adjustments scroll independently. Touch targets are larger, and exact-value rows adapt to accessibility text sizes. The panel adapts to available phone height while retaining the main composition preview and selected timeline row. The expanded inspector also offers a compact preview menu for viewing options.
+- **A more focused editing workspace.** When clip tools are open, compact project/playback controls give more space to the preview and adjustments. Composition details and preview quality are in the viewer menu. Effect stacks put Add, Search, Looks and bypass above compact cards, with real parameter units and fixed keyframe controls beside the adjustment rulers. Soul Studio’s AI, Draw and other tools remain available.
+- **Reliable effect copies.** Add or duplicate visual effects with independent values and keyframes. Undo and reopening the project preserve repeated filter instances; the128-effect limit remains.
+- **A simpler Color tab.** Scopes are removed. Adjusted/Original preview, Primary, Wheels, Curves, Looks, grade copy/paste and reset remain available.
+- **Refined Messages.** Inbox spacing, conversation headers, reply quotes, bubbles and the composer have clearer hierarchy and consistent controls. A changed or invalid attachment no longer keeps the previous decoded photo visible. The Inbox account subtitle uses only the signed-in account’s own username.
+- **Restrained motion.** Short new-message transitions apply only to small live arrivals while the reader is already at the latest messages. Loading history, searching and bulk reconnects stay still. Reduce Motion and Optimize Mode disable decorative movement. Animation does not force the conversation to scroll or change measured message heights.
 
-Native captures and bounded automated checks support this revision, but do not prove every project, effect stack or physical-phone frame rate. Physical-device gestures, real-account community posting/playback, accessibility and sustained large-project performance still require acceptance.
+The existing Community image/video feed, local editing, fixed Media/Audio/Shape/Text/Elements tray, vertical timeline scrolling and left-side layer visibility/lock controls remain included. Native Soul project files/links and portable effect packs remain supported. Alight Motion project QR/XML import remains removed.
 
-Optional phone image generation requires a model download and compatible hardware. Video generation currently uses an optional configured computer workflow. Full native Spotify Free playback, unrestricted provider downloads and complete translation coverage are not promised.
+**Unsigned arm64 IPA for iOS 26+. Sign before installing.**
 
-The new Community rules and feed index are live. The updated trusted cleanup service is tested locally but not deployed; removed new posts can retain reserved storage until owner maintenance is updated.
+Native captures and bounded automated checks support this update; they do not prove every project, effect stack or physical-phone frame rate. Physical-device gestures, keyboard/VoiceOver behavior, hardware audio handling and sustained large-project performance still require acceptance. Public captures use original demo artwork and fictional conversations, not private messages or real user projects.
+
+No backend rule, index, trusted-cleanup, paid service, dependency or 3D sample change is part of 5.10.2. Community keeps existing verification and cloud safeguards. The revised trusted cleanup cascade remains tested locally but not deployed; removed new Community posts can retain reserved storage until owner maintenance is updated.
+
+Existing limits remain: partial translation coverage; provider-restricted media downloads; no full native Spotify Free streaming; optional phone image models require a model download and compatible hardware; video generation uses an optional configured computer workflow. Terminated-app message notifications require APNs/server integration. Fit preserves the whole composition; Fill may crop only the viewer and does not change exported frames.
