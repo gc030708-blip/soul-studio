@@ -2,7 +2,7 @@
 
 Website screenshots and the tour come from the native Soul Studio iPhone simulator, using local test projects rather than private user projects or messages. Orbit artwork was created for this app demonstration. Screenshots are native app captures, not concept renders; device performance can differ.
 
-The editor, clip controls, Media, drawing, My Music, Messages, Image Studio, About, text-animation and easing-graph screenshots were captured from Soul Studio 5.10.2. The clip-controls capture uses a video layer so all five tool tabs are visible. Demo songs and conversations are fictional test content.
+The editor, clip controls, Media, drawing, My Music, Messages, Image Studio, About, text-animation and easing-graph screenshots were captured from the second layout revision of Soul Studio 5.10.2. The Shapes image uses the settled native tour frame; the early first-mount loading check remains private. The clip-controls capture uses a video layer so all five tool tabs are visible. Demo songs and conversations are fictional test content.
 
 The Community feed screenshot is retained from the 5.10.1 fifth beta revision because its interface is unchanged in 5.10.2. It uses fictional profiles, posts, comments and counts with original Orbit artwork. It demonstrates the interface and is not live community activity.
 

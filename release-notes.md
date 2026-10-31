@@ -1,6 +1,18 @@
-# Soul Studio 5.10.2
+# Soul Studio 5.10.2 — second layout revision
 
-30 October 2026 · iPhone beta
+31 October 2026 · iPhone beta · Revision 2
+
+This second layout revision gives the preview more space and puts a shorter full-width controls panel below the timeline.
+
+- **Larger viewer, closer controls.** The preview, timeline and tools now use proportions closer to the supplied editing reference. The normal panel stays the same height across Transform, Effects, AI, Sound and Speed. Expand and Compact are available in its three-dot menu.
+- **One tool row.** Back, tool tabs and clip actions share a compact header. The duplicate layer-title row is removed. A Studio menu keeps every workspace available while clip tools are open; the normal bottom tabs return when tools close.
+- **Flat adjustments.** Transform and effect rows use aligned labels, exact real-unit values and rulers, with animation controls in a fixed left rail. Effect sections form a continuous stack, and the first effect opens on entry.
+- **Predictable dismissal.** Closing clip tools cancels any queued presentation, so a late open cannot reopen the dismissed panel.
+- **Visible layers.** The timeline retains permanent eye/lock controls, vertical finger scrolling, horizontal scrubbing and keyframes. The approved fixed add tray stays available.
+
+Physical iPhone gestures, keyboard/VoiceOver behavior and sustained performance remain acceptance work. This is a layout revision; no new AI model, dependency, backend rule, rendering feature or 3D sample is introduced. The first5.10.2 fixes below remain included.
+
+## Included from the first 5.10.2 release
 
 This update focuses on usable clip controls, a quieter Color workspace and clearer conversations.
 
